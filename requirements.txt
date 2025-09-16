@@ -1,9 +1,11 @@
-streamlit==1.40.1
-ccxt==4.4.48
-pandas==2.0.3
-numpy==1.24.4
-pandas_ta==0.3.14b0
-flask==2.3.3
-flask-cors==4.0.0
-requests==2.31.0
-python-dateutil==2.8.2
+(
+echo streamlit==1.40.1
+echo ccxt==4.4.48
+echo numpy==1.24.4
+echo pandas==2.0.3
+echo pandas-ta==0.3.14b0
+echo requests==2.31.0
+echo flask==2.3.3
+echo flask-cors==4.0.0
+echo python-dateutil==2.8.2
+) > requirements.txt
