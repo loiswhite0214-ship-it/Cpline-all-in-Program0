@@ -1,0 +1,14 @@
+@echo off
+setlocal
+
+cd /d "%~dp0"
+
+REM 分别拉起两个窗口，互不干扰
+start "backend" "%~dp0backend_start.bat"
+start "frontend" "%~dp0frontend_start.bat"
+
+REM 稍等再开浏览器
+timeout /t 5 >nul
+start http://127.0.0.1:5173/
+
+endlocal

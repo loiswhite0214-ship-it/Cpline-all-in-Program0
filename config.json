@@ -1,0 +1,103 @@
+{
+  "product_name": "熬鹰计划（4h/1d/1w）",
+  "use_real_data": true,
+  "exchange": "binance",
+  "proxy": "http://127.0.0.1:7890",
+  "rate_limit_ms": 1200,
+  "symbols": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "BNB/USDT",
+    "SOL/USDT",
+    "XRP/USDT",
+    "ADA/USDT",
+    "DOGE/USDT",
+    "TRX/USDT",
+    "AVAX/USDT",
+    "DOT/USDT",
+    "SHIB/USDT",
+    "LINK/USDT",
+    "TON/USDT",
+    "LTC/USDT",
+    "MATIC/USDT"
+  ],
+  "timeframes": [
+    "4h",
+    "1d",
+    "1w"
+  ],
+  "strategies": [
+    {
+      "name": "vegas_tunnel",
+      "enabled": true
+    },
+    {
+      "name": "chan_simplified",
+      "enabled": true
+    },
+    {
+      "name": "macd",
+      "enabled": true
+    },
+    {
+      "name": "ema_adx",
+      "enabled": true
+    },
+    {
+      "name": "macd_plus",
+      "enabled": true
+    },
+    {
+      "name": "rsi_reversion",
+      "enabled": true
+    },
+    {
+      "name": "bb_mean",
+      "enabled": true
+    },
+    {
+      "name": "bb_squeeze",
+      "enabled": true
+    },
+    {
+      "name": "donchian",
+      "enabled": true
+    },
+    {
+      "name": "supertrend",
+      "enabled": true
+    },
+    {
+      "name": "keltner_break",
+      "enabled": true
+    },
+    {
+      "name": "ichimoku_kijun",
+      "enabled": true
+    },
+    {
+      "name": "psar_trend",
+      "enabled": true
+    },
+    {
+      "name": "stochrsi",
+      "enabled": true
+    },
+    {
+      "name": "cci_reversion",
+      "enabled": true
+    },
+    {
+      "name": "adx_di",
+      "enabled": true
+    },
+    {
+      "name": "heikin_ema",
+      "enabled": true
+    },
+    {
+      "name": "vwap_pullback",
+      "enabled": true
+    }
+  ]
+}

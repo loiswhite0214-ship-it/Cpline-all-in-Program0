@@ -1,0 +1,42 @@
+{
+  "name": "eagle-trading-plan",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build --outDir dist",
+    "lint": "bunx tsc --noEmit && bunx biome lint --write",
+    "format": "bunx biome format --write",
+    "preview": "vite preview",
+    "ios:build": "npm run build && npx cap copy ios && npx cap open ios",
+    "ios:dev": "npm run build && npx cap copy ios && npx cap run ios",
+    "ios:sync": "npx cap sync ios"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/js": "^9.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.2",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.20.0",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@capacitor/app": "^7.0.2",
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@capacitor/haptics": "^7.0.2",
+    "@capacitor/ios": "^7.4.3",
+    "@capacitor/keyboard": "^7.0.2",
+    "@capacitor/status-bar": "^7.0.2",
+    "echarts": "^6.0.0"
+  }
+}
