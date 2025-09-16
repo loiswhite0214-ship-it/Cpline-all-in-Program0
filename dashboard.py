@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_page_config(page_title="Cpline · Crypto Dashboard", layout="wide", initial_sidebar_state="collapsed")
+import streamlit as st
 st.caption("THIS IS dashboard.py")
 
 import json
